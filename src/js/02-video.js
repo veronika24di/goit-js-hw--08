@@ -1,5 +1,5 @@
 import Player from '@vimeo/player';
-import throttle from 'lodash';
+import {throttle} from 'lodash';
 
 const iframe = document.getElementById('vimeo-player');
 const player = new Player(iframe);
@@ -36,4 +36,3 @@ player.getDuration().then(duration => {
 }).catch(error => {
   console.error(`Error getting duration: ${error}`);
 });
-
